@@ -9,24 +9,24 @@
 /* Begin PBXBuildFile section */
 		3512503129FB1BB7006B7058 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3512503029FB1BB7006B7058 /* AppDelegate.swift */; };
 		3512503329FB1BB7006B7058 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3512503229FB1BB7006B7058 /* GameScene.sks */; };
-		3512503529FB1BB7006B7058 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3512503429FB1BB7006B7058 /* Actions.sks */; };
 		3512503729FB1BB7006B7058 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3512503629FB1BB7006B7058 /* GameScene.swift */; };
 		3512503929FB1BB7006B7058 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3512503829FB1BB7006B7058 /* GameViewController.swift */; };
 		3512503C29FB1BB7006B7058 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3512503A29FB1BB7006B7058 /* Main.storyboard */; };
 		3512503E29FB1BB9006B7058 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3512503D29FB1BB9006B7058 /* Assets.xcassets */; };
 		3512504129FB1BB9006B7058 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3512503F29FB1BB9006B7058 /* LaunchScreen.storyboard */; };
+		3512504829FB1DA2006B7058 /* Smashing-Things.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 3512504729FB1DA2006B7058 /* Smashing-Things.atlas */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3512502D29FB1BB7006B7058 /* OrangeTree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrangeTree.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3512503029FB1BB7006B7058 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3512503229FB1BB7006B7058 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		3512503429FB1BB7006B7058 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		3512503629FB1BB7006B7058 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		3512503829FB1BB7006B7058 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		3512503B29FB1BB7006B7058 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3512503D29FB1BB9006B7058 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3512504029FB1BB9006B7058 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3512504729FB1DA2006B7058 /* Smashing-Things.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = "Smashing-Things.atlas"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +44,7 @@
 			isa = PBXGroup;
 			children = (
 				3512502F29FB1BB7006B7058 /* OrangeTree */,
+				3512504729FB1DA2006B7058 /* Smashing-Things.atlas */,
 				3512502E29FB1BB7006B7058 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,7 +62,6 @@
 			children = (
 				3512503029FB1BB7006B7058 /* AppDelegate.swift */,
 				3512503229FB1BB7006B7058 /* GameScene.sks */,
-				3512503429FB1BB7006B7058 /* Actions.sks */,
 				3512503629FB1BB7006B7058 /* GameScene.swift */,
 				3512503829FB1BB7006B7058 /* GameViewController.swift */,
 				3512503A29FB1BB7006B7058 /* Main.storyboard */,
@@ -132,8 +132,8 @@
 				3512503C29FB1BB7006B7058 /* Main.storyboard in Resources */,
 				3512503329FB1BB7006B7058 /* GameScene.sks in Resources */,
 				3512503E29FB1BB9006B7058 /* Assets.xcassets in Resources */,
+				3512504829FB1DA2006B7058 /* Smashing-Things.atlas in Resources */,
 				3512504129FB1BB9006B7058 /* LaunchScreen.storyboard in Resources */,
-				3512503529FB1BB7006B7058 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,8 +298,8 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -325,8 +325,8 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
