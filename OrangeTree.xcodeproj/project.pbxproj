@@ -15,7 +15,8 @@
 		3512504129FB1BB9006B7058 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3512503F29FB1BB9006B7058 /* LaunchScreen.storyboard */; };
 		3512504829FB1DA2006B7058 /* Smashing-Things.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 3512504729FB1DA2006B7058 /* Smashing-Things.atlas */; };
 		3512504A29FB2405006B7058 /* Orange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3512504929FB2405006B7058 /* Orange.swift */; };
-		354746052A04567D001F5005 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 354746042A04567D001F5005 /* GameScene.sks */; };
+		354746052A04567D001F5005 /* Level-1.sks in Resources */ = {isa = PBXBuildFile; fileRef = 354746042A04567D001F5005 /* Level-1.sks */; };
+		354746072A073441001F5005 /* Level-2.sks in Resources */ = {isa = PBXBuildFile; fileRef = 354746062A073441001F5005 /* Level-2.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +29,8 @@
 		3512504029FB1BB9006B7058 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3512504729FB1DA2006B7058 /* Smashing-Things.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = "Smashing-Things.atlas"; sourceTree = "<group>"; };
 		3512504929FB2405006B7058 /* Orange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Orange.swift; sourceTree = "<group>"; };
-		354746042A04567D001F5005 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		354746042A04567D001F5005 /* Level-1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = "Level-1.sks"; sourceTree = "<group>"; };
+		354746062A073441001F5005 /* Level-2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = "Level-2.sks"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +66,8 @@
 			children = (
 				3512503029FB1BB7006B7058 /* AppDelegate.swift */,
 				3512503629FB1BB7006B7058 /* GameScene.swift */,
-				354746042A04567D001F5005 /* GameScene.sks */,
+				354746042A04567D001F5005 /* Level-1.sks */,
+				354746062A073441001F5005 /* Level-2.sks */,
 				3512503829FB1BB7006B7058 /* GameViewController.swift */,
 				3512504929FB2405006B7058 /* Orange.swift */,
 				3512503A29FB1BB7006B7058 /* Main.storyboard */,
@@ -133,8 +136,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3512503C29FB1BB7006B7058 /* Main.storyboard in Resources */,
-				354746052A04567D001F5005 /* GameScene.sks in Resources */,
+				354746052A04567D001F5005 /* Level-1.sks in Resources */,
 				3512503E29FB1BB9006B7058 /* Assets.xcassets in Resources */,
+				354746072A073441001F5005 /* Level-2.sks in Resources */,
 				3512504829FB1DA2006B7058 /* Smashing-Things.atlas in Resources */,
 				3512504129FB1BB9006B7058 /* LaunchScreen.storyboard in Resources */,
 			);

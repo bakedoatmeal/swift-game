@@ -13,6 +13,12 @@ class GameScene: SKScene {
     var orange: Orange?
     var touchStart: CGPoint = .zero
     var shapeNode = SKShapeNode()
+    var boundary = SKNode()
+    var numOfLevels: UInt32 = 2
+    
+    static func Load(level: Int) -> GameScene? {
+      return GameScene(fileNamed: "Level-\(level)")
+    }
     
     override func didMove(to view: SKView) {
       orangeTree = childNode(withName: "tree") as? SKSpriteNode
@@ -23,6 +29,18 @@ class GameScene: SKScene {
         addChild(shapeNode)
         
         physicsWorld.contactDelegate = self
+        
+        boundary.physicsBody = SKPhysicsBody(edgeLoopFrom: CGRect(origin: .zero, size: size))
+        let background = childNode(withName: "background") as? SKSpriteNode
+        boundary.position = CGPoint(x: (background?.size.width ?? 0) / -2, y: (background?.size.height ?? 0) / -2)
+        addChild(boundary)
+        
+        // Add the Sun to the scene
+        let sun = SKSpriteNode(imageNamed: "Sun")
+        sun.name = "sun"
+        sun.position.x = size.width / 2 - (sun.size.width * 0.75)
+        sun.position.y = size.height / 2 - (sun.size.height * 0.75)
+        addChild(sun)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -36,6 +54,19 @@ class GameScene: SKScene {
             addChild(orange!)
             
             touchStart = location
+        }
+        
+        // Check whether the sun was tapped and change the level
+        for node in nodes(at: location) {
+          if node.name == "sun" {
+            let n = Int(arc4random() % numOfLevels + 1)
+            if let scene = GameScene.Load(level: n) {
+              scene.scaleMode = .aspectFill
+              if let view = view {
+                view.presentScene(scene)
+              }
+            }
+          }
         }
     }
     
@@ -56,8 +87,8 @@ class GameScene: SKScene {
         let touch = touches.first!
         let location = touch.location(in: self)
         
-        let dx = touchStart.x - location.x
-        let dy = touchStart.y - location.y
+        let dx = (touchStart.x - location.x) * 0.5
+        let dy = (touchStart.y - location.y) * 0.5
         let vector = CGVector(dx: dx, dy: dy)
         
         // Apply vector as impulse
@@ -73,9 +104,7 @@ extension GameScene: SKPhysicsContactDelegate {
         let nodeA = contact.bodyA.node
         let nodeB = contact.bodyB.node
 
-        print(nodeA?.name)
-        print(nodeB?.name)
-        if contact.collisionImpulse > 1 {
+        if contact.collisionImpulse > 15 {
             if nodeA?.name == "skull" {
                 print(contact.collisionImpulse)
                 removeSkull(node: nodeA!)
