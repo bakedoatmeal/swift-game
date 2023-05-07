@@ -14,7 +14,7 @@ class GameScene: SKScene {
     var touchStart: CGPoint = .zero
     var shapeNode = SKShapeNode()
     var boundary = SKNode()
-    var numOfLevels: UInt32 = 2
+    var numOfLevels: UInt32 = 4
     
     static func Load(level: Int) -> GameScene? {
       return GameScene(fileNamed: "Level-\(level)")
@@ -106,16 +106,28 @@ extension GameScene: SKPhysicsContactDelegate {
 
         if contact.collisionImpulse > 15 {
             if nodeA?.name == "skull" {
-                print(contact.collisionImpulse)
                 removeSkull(node: nodeA!)
+                skullDestroyedParticles(point: nodeA!.position)
             } else if nodeB?.name == "skull" {
-                print(contact.collisionImpulse)
                 removeSkull(node: nodeB!)
+                skullDestroyedParticles(point: nodeA!.position)
             }
         }
     }
     
     func removeSkull(node: SKNode) {
         node.removeFromParent()
+    }
+}
+
+extension GameScene {
+  func skullDestroyedParticles(point: CGPoint) {
+      if let explosion = SKEmitterNode(fileNamed: "Explosion") {
+        addChild(explosion)
+        explosion.position = point
+        let wait = SKAction.wait(forDuration: 1)
+        let removeExplosion = SKAction.removeFromParent()
+        explosion.run(SKAction.sequence([wait, removeExplosion]))
+      }
     }
 }

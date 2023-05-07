@@ -17,6 +17,10 @@
 		3512504A29FB2405006B7058 /* Orange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3512504929FB2405006B7058 /* Orange.swift */; };
 		354746052A04567D001F5005 /* Level-1.sks in Resources */ = {isa = PBXBuildFile; fileRef = 354746042A04567D001F5005 /* Level-1.sks */; };
 		354746072A073441001F5005 /* Level-2.sks in Resources */ = {isa = PBXBuildFile; fileRef = 354746062A073441001F5005 /* Level-2.sks */; };
+		3547460A2A073761001F5005 /* Explosion.sks in Resources */ = {isa = PBXBuildFile; fileRef = 354746082A073761001F5005 /* Explosion.sks */; };
+		3547460B2A073761001F5005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 354746092A073761001F5005 /* Assets.xcassets */; };
+		3547460F2A073B0E001F5005 /* Level-3.sks in Resources */ = {isa = PBXBuildFile; fileRef = 3547460E2A073B0E001F5005 /* Level-3.sks */; };
+		354746112A073BC1001F5005 /* Level-4.sks in Resources */ = {isa = PBXBuildFile; fileRef = 354746102A073BC1001F5005 /* Level-4.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +35,13 @@
 		3512504929FB2405006B7058 /* Orange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Orange.swift; sourceTree = "<group>"; };
 		354746042A04567D001F5005 /* Level-1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = "Level-1.sks"; sourceTree = "<group>"; };
 		354746062A073441001F5005 /* Level-2.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = "Level-2.sks"; sourceTree = "<group>"; };
+		354746082A073761001F5005 /* Explosion.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Explosion.sks; sourceTree = "<group>"; };
+		354746092A073761001F5005 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3547460C2A073A4B001F5005 /* moonsurface.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = moonsurface.jpeg; sourceTree = "<group>"; };
+		3547460D2A073AEE001F5005 /* marsSurface.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = marsSurface.png; sourceTree = "<group>"; };
+		3547460E2A073B0E001F5005 /* Level-3.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = "Level-3.sks"; sourceTree = "<group>"; };
+		354746102A073BC1001F5005 /* Level-4.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = "Level-4.sks"; sourceTree = "<group>"; };
+		354746122A073BE1001F5005 /* jupiter.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jupiter.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +58,10 @@
 		3512502429FB1BB7006B7058 = {
 			isa = PBXGroup;
 			children = (
+				3547460C2A073A4B001F5005 /* moonsurface.jpeg */,
+				3547460D2A073AEE001F5005 /* marsSurface.png */,
+				354746122A073BE1001F5005 /* jupiter.jpeg */,
+				354746092A073761001F5005 /* Assets.xcassets */,
 				3512502F29FB1BB7006B7058 /* OrangeTree */,
 				3512504729FB1DA2006B7058 /* Smashing-Things.atlas */,
 				3512502E29FB1BB7006B7058 /* Products */,
@@ -65,9 +80,12 @@
 			isa = PBXGroup;
 			children = (
 				3512503029FB1BB7006B7058 /* AppDelegate.swift */,
+				354746082A073761001F5005 /* Explosion.sks */,
 				3512503629FB1BB7006B7058 /* GameScene.swift */,
 				354746042A04567D001F5005 /* Level-1.sks */,
 				354746062A073441001F5005 /* Level-2.sks */,
+				3547460E2A073B0E001F5005 /* Level-3.sks */,
+				354746102A073BC1001F5005 /* Level-4.sks */,
 				3512503829FB1BB7006B7058 /* GameViewController.swift */,
 				3512504929FB2405006B7058 /* Orange.swift */,
 				3512503A29FB1BB7006B7058 /* Main.storyboard */,
@@ -138,8 +156,12 @@
 				3512503C29FB1BB7006B7058 /* Main.storyboard in Resources */,
 				354746052A04567D001F5005 /* Level-1.sks in Resources */,
 				3512503E29FB1BB9006B7058 /* Assets.xcassets in Resources */,
+				354746112A073BC1001F5005 /* Level-4.sks in Resources */,
 				354746072A073441001F5005 /* Level-2.sks in Resources */,
 				3512504829FB1DA2006B7058 /* Smashing-Things.atlas in Resources */,
+				3547460A2A073761001F5005 /* Explosion.sks in Resources */,
+				3547460F2A073B0E001F5005 /* Level-3.sks in Resources */,
+				3547460B2A073761001F5005 /* Assets.xcassets in Resources */,
 				3512504129FB1BB9006B7058 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
